@@ -996,57 +996,8 @@ section,
   /* Largeur, background, etc. selon votre design */
 }
 
-@media screen and (max-width: 768px) {
-  .custom-container .slogan {
-    top: 150px;
-    /* Ajuste la position pour les petits écrans */
-    left: 10px;
-    /* Réduit le décalage gauche */
-    padding-right: 20px;
-    /* Réduit les marges */
-    padding-left: 20px;
-    width: 90%;
-    /* Slogan occupe presque toute la largeur */
-    max-width: none;
-    /* Enlève la limite si le parent gère la largeur */
-    font-size: 10px;
-    /* Réduit la taille de la police */
-  }
-
-  .custom-container .slogan h2 {
-    font-size: 30px;
-    font-weight: 600;
-    /* margin-bottom: 25px;
-    padding-bottom: 25px; */
-    color: var(--accent-color);
-    position: relative;
-  }
-
-  .custom-container .slogan h3 {
-    font-size: 15px;
-    font-weight: 600;
-    /* margin-bottom: 25px;
-    padding-bottom: 25px; */
-    /* color: var(--accent-color); */
-    position: relative;
-  }
 
 
-}
-
-/* Media Query pour écrans très petits (écran < 480px) */
-@media screen and (max-width: 480px) {
-  .custom-container .slogan {
-    top: 120px;
-    /* Ajuste encore plus la position */
-    left: 10px;
-    /* Réduit encore le décalage gauche */
-    padding: 15px;
-    /* Réduit les marges */
-    font-size: 12px;
-    /* Police plus petite pour les écrans très petits */
-  }
-}
 
 .custom-container .slogan h2 {
   font-size: 60px;
@@ -1085,6 +1036,43 @@ section,
 
 
 
+@media screen and (max-width: 768px) {
+  .custom-container .slogan {
+    top: 150px;
+    /* Ajuste la position pour les petits écrans */
+    left: 10px;
+    /* Réduit le décalage gauche */
+    padding-right: 20px;
+    /* Réduit les marges */
+    padding-left: 20px;
+    width: 90%;
+    /* Slogan occupe presque toute la largeur */
+    max-width: none;
+    /* Enlève la limite si le parent gère la largeur */
+
+    /* Réduit la taille de la police */
+  }
+
+  .custom-container .slogan h2 {
+    font-size: 30px;
+    font-weight: 600;
+    /* margin-bottom: 25px;
+    padding-bottom: 25px; */
+    color: var(--accent-color);
+    position: relative;
+  }
+
+  .custom-container .slogan h3 {
+    font-size: 15px;
+    font-weight: 500;
+    /* margin-bottom: 25px;
+    padding-bottom: 25px; */
+    /* color: var(--accent-color); */
+    position: relative;
+  }
+
+
+}
 
 
 
