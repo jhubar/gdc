@@ -466,7 +466,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: color-mix(in srgb, var(--card--background-color), transparent 80%);
   background: url("../img/footer.png") top center no-repeat;
   background-size: cover;
   font-size: 14px;
