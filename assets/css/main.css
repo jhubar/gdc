@@ -333,6 +333,46 @@ h6 {
     left: -100%;
     visibility: visible;
   }
+
+  .navmenu a.active:before,
+  .navmenu>ul>li>a.active:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    /* Position du surlignage pour les non-dropdowns */
+    left: 0;
+    background-color: var(--accent-color);
+    visibility: visible;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navmenu .dropdown.active>span:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 10px;
+    left: 0;
+    background-color: var(--accent-color);
+    visibility: visible;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navmenu a.active,
+  .navmenu .dropdown.active>span {
+    color: var(--nav-hover-color);
+    font-weight: bold;
+  }
+
+  .navmenu .dropdown.active>span {
+
+    /* Couleur d'accentuation */
+    font-weight: bold;
+  }
+
+
 }
 
 /* Mobile Navigation */
