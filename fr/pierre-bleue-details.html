@@ -4,7 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/" />
+  <script>
+    const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+    const baseHref = isLocal ? '/' : '/gdc/';
+    document.write(`<base href="${baseHref}">`);
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
   <!-- Title optimisé pour le SEO -->
   <title>Pierre Bleue Naturelle - Finitions Brute, Clivée et Semi-Taillée</title>
   <meta name="description"
@@ -75,8 +81,8 @@
         <ul>
           <li><a href="fr/index.html" class="active">Accueil</a></li>
 
-          <li class="dropdown language-switcher"><span>Nos pierres</span> <i
-              class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown language-switcher"><a href=""><span>Nos pierres</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="fr/gres-details.html">Gres</a></li>
               <li><a href="fr/calcaire-details.html">Calcaire</a></li>
@@ -84,8 +90,8 @@
             </ul>
           </li>
           <li><a href="">Contact</a></li>
-          <li class="dropdown language-switcher"><span>Langue</span> <i
-              class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown language-switcher"><a href=""><span>Langue</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Français</a></li>
               <li><a href="#">English</a></li>

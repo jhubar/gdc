@@ -196,6 +196,9 @@ h6 {
   --heading-color: #3c3c3c;
   --nav-color: #3c3c3c;
   --nav-hover-color: #3c3c3c;
+  --nav-dropdown-color: #3c3c3c;
+  --nav-dropdown-hover-color: #feb900;
+
 }
 
 /*--------------------------------------------------------------
@@ -368,12 +371,32 @@ h6 {
 
   .navmenu .dropdown.active>span {
 
-    /* Couleur d'accentuation */
+
     font-weight: bold;
   }
 
+  .navmenu .dropdown ul {
+    background: var(--nav-dropdown-background-color);
+    /* Fond du menu */
+  }
 
+  .navmenu .dropdown ul a {
+    color: var(--nav-dropdown-color);
+    /* Couleur des liens */
+    transition: color 0.3s;
+  }
+
+  .navmenu .dropdown ul a:hover {
+    color: var(--nav-dropdown-hover-color);
+    /* Couleur des liens au survol */
+  }
 }
+
+
+
+
+
+
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {

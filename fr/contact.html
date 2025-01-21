@@ -4,7 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/" />
+  <script>
+    const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+    const baseHref = isLocal ? '/' : '/gdc/';
+    document.write(`<base href="${baseHref}">`);
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
 
   <!-- Title optimisé pour le SEO -->
   <title>Grès du Condroz - Pierres Naturelles pour Aménagements et Constructions</title>
