@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
-    const baseHref = isLocal ? '/' : '/gdc/';
-    document.write(`<base href="${baseHref}">`);
-  </script>
+<script>
+  const hostname = window.location.hostname;
+  const isLocal = hostname === '127.0.0.1' || hostname === 'localhost';
+  const isGithubPages = hostname.includes('github.io');
+  const baseHref = isLocal ? '/' : (isGithubPages ? '/gdc/' : '/');
+  document.write(`<base href="${baseHref}">`);
+</script>
+
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js"></script>
 
@@ -170,7 +173,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <img src="assets/img/pierre-bleue/semi-taillee.png"
+                <img src="assets/img/pierre-bleue/semi-taille.jpg"
                   alt="Semi-Cut Granite - Balanced finish between raw and polished" class="service-image">
               </div>
               <h3>Semi-Cut Granite</h3>
